@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-eval';">
+    <link href="node_modules/vanilla-jsoneditor/themes/jse-theme-dark.css" rel="stylesheet" type="text/css">
+    <title>JET - JSON Editing Tool</title>
+  </head>
+  <body>
+    <div class="container">
+		<div class="topMenu">
+            <button id="btnOpenFile" title="Open"><img src="icons/Open32.png" /></button>
+            <button id="btnSaveFile" title="Save"><img src="icons/Save32.png" /></button>
+		</div>
+        <br/>
+		<div id="jsonEditor"></div>
+	</div>
+	
+	<!-- Include other .js files -->
+	<script type="module" src="./editor.js"></script>
+  </body>
+</html>
