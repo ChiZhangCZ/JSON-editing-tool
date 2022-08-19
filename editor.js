@@ -4,8 +4,6 @@ const editor = new JSONEditor({
   target: document.getElementById('jsonEditor')
 })
 
-var parsedJson = {}
-
 const saveButton = document.querySelector('#btnSaveFile');
 saveButton.disabled=true
 
@@ -16,7 +14,7 @@ function setJson(filePath) {
           alert("An error occurred reading the file: " + err.message);
           return;
         }
-        parsedJson = JSON.parse(data);
+        const parsedJson = JSON.parse(data);
         const content = {
             text: undefined,
             json: parsedJson
