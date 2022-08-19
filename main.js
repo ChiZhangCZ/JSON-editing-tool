@@ -34,7 +34,7 @@ function createWindow () {
     slashes: true
   }));
 
-  electron.ipcMain.handle('dialog', (event, method, params) => {       
+  electron.ipcMain.handle('dialog', (_event, method, params) => {       
     return electron.dialog[method](params);
   });
 
